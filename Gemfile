@@ -6,8 +6,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'pg'
 gem 'puma'
 gem 'rails', '5.1.3'
+<<<<<<< HEAD
 gem 'devise'
 gem 'omniauth-facebook'
+=======
+>>>>>>> master
 gem 'redis'
 
 gem 'autoprefixer-rails'
