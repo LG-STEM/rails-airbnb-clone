@@ -62,7 +62,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.3)
-    byebug (9.0.6)
+    byebug (9.1.0)
     cloudinary (1.1.7)
       aws_cf_signer
       rest-client
