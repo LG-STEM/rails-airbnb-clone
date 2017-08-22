@@ -12,6 +12,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'pg'
 gem 'puma'
 gem 'rails', '5.1.3'
+
+gem 'devise'
+gem 'omniauth-facebook'
 gem 'redis'
 
 gem 'autoprefixer-rails'
@@ -21,7 +24,6 @@ gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
-gem 'devise'
 
 group :development, :test do
   gem 'better_errors'
