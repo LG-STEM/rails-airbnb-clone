@@ -1,16 +1,14 @@
 // Specific CSS for your home-page
 #welcome_text_div {
-    //background-image: url('banner.png');
-    //background-color: rgba;
-    width: 800px;
-    height: 300px;
-    position: absolute;
-    top: 50%;
-    margin-top: -150px;
-    left: 50%;
-    margin-left: -400px;
+    background-image: url('banner.png');
+    background-size: cover !important;
+    height: 100vh;
     opacity: 0.9;
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
 }
 
 #welcome_text {
@@ -60,7 +58,7 @@
   width: 100%;
   max-height: 750px;
   height: 100vh;
-  background: $gray;
+  //background: $gray;
   margin: 0 auto;
   top: -80px;
   .video{
