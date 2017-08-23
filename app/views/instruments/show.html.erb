@@ -1,5 +1,18 @@
-<% if @instrument.photo? %>
-  <%= cl_image_tag @instrument.photo.path, width: 200, height: 300, crop: :fill %>
-<% end %>
+ <%= cl_image_tag @instrument.photo.path, width: 200, height: 300, crop: :fill %>
+<div class="row">
+<div class="col-md-9">
+<h4><%= @instrument.name %></h4>
+<h4><%= @instrument.availibility %></h4>
+<h4>"Price $ <%= @instrument.price %>"</h4>
 
-
+    <div class="row">
+      <div class="col-md-12">
+        <h2>About This Listing</h2>
+        <p><%= @instrument.description%></p>
+      </div>
+    </div>
+<div class="col-md-4">
+        <!-- Reservation form -->
+        <%= render 'bookings/form' %>
+      </div>
+    </div>
