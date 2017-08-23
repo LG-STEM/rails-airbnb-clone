@@ -25,9 +25,9 @@ INSTRUMENTS = {
     'https://www.mopop.org/media/2628/gibson_les_paul_goldtop_guitar_gallery.jpg'
     ],
   drums: [
-    'https://s-media-cache-ak0.pinimg.com/736x/97/79/0c/97790cf4d9bac1be384ad4e75e6ca193--gretsch-drums-drum-sets.jpg'
+    'https://s-media-cache-ak0.pinimg.com/736x/97/79/0c/97790cf4d9bac1be384ad4e75e6ca193--gretsch-drums-drum-sets.jpg',
+    'https://de.yamaha.com/de/files/Junior_Kit_540x540_396x396_3fd7dfa87f41b96b09838060b7c9d668.jpg'
     ]
-
 }
 
 20.times do
