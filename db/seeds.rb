@@ -30,7 +30,7 @@ INSTRUMENTS = {
     name: INSTRUMENTS.keys.sample.to_s,
     description: Faker::Lorem.paragraph,
     price:  (10..90).to_a.sample,
-    availibility: Faker::Boolean.boolean,
+    availibility: Faker::Boolean.boolean
 
   )
 
