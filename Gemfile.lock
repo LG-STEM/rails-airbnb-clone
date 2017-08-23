@@ -86,15 +86,10 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.6.1)
     execjs (2.7.0)
-<<<<<<< HEAD
-    faker (1.8.4)
-      i18n (~> 0.5)
-=======
 
     faker (1.8.4)
       i18n (~> 0.5)
 
->>>>>>> 6434c4b63128dd04a545a43e986746ec47bff0a6
     faraday (0.12.2)
       multipart-post (>= 1.2, < 3)
 
