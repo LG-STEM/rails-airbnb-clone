@@ -8,3 +8,5 @@ public/assets
 
 # Ignore application configuration
 /config/application.yml
+
+app/assets/videos/export_vid_bg1.mp4
