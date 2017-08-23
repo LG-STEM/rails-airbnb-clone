@@ -1,6 +1,6 @@
 class InstrumentsController < ApplicationController
   def index
-    if params[:search].nil?
+    if params[:search].nil? || params[:search][:name] == ""
       @instruments = Instrument.all
     else
       @instruments = Instrument.where(name: params[:search][:name])
