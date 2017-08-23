@@ -16,7 +16,11 @@ puts 'Creating 20 fake instruments...'
 INSTRUMENTS = {
   piano: ['https://usa.yamaha.com/files/DF3BBFBAC0EB418EAA55B39BBDE6691D_12073_2787x2296_b0d03a194b23e7cf85e62e1a36a7c1ab.jpg',
     'http://bestdigitalpiano.net/wp-content/uploads/2013/09/Roland-RD-300NX-Digital-Piano-1024x515.jpg'],
-  guitar: ['https://www.taylorguitars.com/sites/default/files/styles/multi_column_guitar_three/public/responsive-guitar-detail/Taylor-814ce-fr-2015.png?itok=B3YG3tBf']
+  guitar: [
+    'https://static.pexels.com/photos/225230/pexels-photo-225230.jpeg'
+    'https://static.pexels.com/photos/164869/pexels-photo-164869.jpeg'
+    'https://static.pexels.com/photos/15919/pexels-photo.jpg'
+  ]
 
 }
 
