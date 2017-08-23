@@ -1,5 +1,28 @@
-<% if @instrument.photo? %>
-  <%= cl_image_tag @instrument.photo.path, width: 200, height: 300, crop: :fill %>
-<% end %>
+<div class="container">
+  <div class="row col-lg-12 text-center">
+    <div class="card">
+      <img class="card-img-top img-fluid" alt="Card image cap"<%= cl_image_tag @instrument.photo.path, width: 900, height: 400, crop: :fill %>
+        <div class="card-body">
+          <h3 class="card-title"><%= @instrument.name %></h3>
+          <h4>Price: $ <%= @instrument.price %></h4>
+          <p class="card-text"><%= @instrument.description%></p>
+        <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+        4.0 stars
+        </div>
+    </div>
+</div>
+</div>
+
+<br>
+
+
+<div class="card">
+  <div class="card-header">
+          Product Reviews
+        </div>
+        <div class="card-body">
+           <%= render 'bookings/form' %>
+        </div>
+  </div>
 
 
