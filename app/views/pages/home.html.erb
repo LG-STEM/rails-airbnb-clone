@@ -9,12 +9,6 @@
             Your browser does not support the video tag.
           </video>
         </div>
-        <section class=“search-form”>
-          <%= simple_form_for(:search, url: instruments_path, method: “get”) do |f| %>
-          <%= f.input :name, input_html: { class: ‘search-input’ }, label: false, placeholder: “What instrument are you looking for?” %>
-          <%= f.submit class: ‘search-btn’ %>
-          <% end %>
-        </section>
      <p id="just_for_the_weekend_text">STAFF PICKS</p>
      <div id="kuta_ubud_kualalumpur_div">
         <div id="kuta_div">
