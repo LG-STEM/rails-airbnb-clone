@@ -8,11 +8,16 @@
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
+    <title> Rent musical instruments, equipment, and gears.</title>
+    <link rel="icon" type="image/jpg" href="https://s5.postimg.org/qqgj4taev/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
   </head>
-  <body>
+   <body>
     <%= render "shared/navbar" %>
     <%= render "shared/flashes" %>
     <%= yield %>
+    <%= render "shared/footer" %>
     <%= javascript_include_tag 'application' %>
     <%= cloudinary_js_config %>
   </body>

@@ -1,1 +1,562 @@
 // Specific CSS for your home-page
+#welcome_text_div {
+    background-image: url('banner.png');
+    background-size: cover !important;
+    height: 100vh;
+    opacity: 0.9;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+#welcome_text {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#welcome_under_text {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+#how_it_works:link {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    border: 1p solid black;
+    padding: 10px 30px 10px 30px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+}
+
+#how_it_works:visited {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#how_it_works:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper{
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  max-height: 750px;
+  height: 100vh;
+  //background: $gray;
+  margin: 0 auto;
+  top: -80px;
+  .video{
+    position: absolute;
+    left: 0 ;
+    right: 50px ;
+    top: -30%;
+    width: 100%;
+    max-width: 1500px;
+    height: 150%;
+    margin: auto;
+  }
+}
+
+
+/*-----*/
+
+#where_div {
+    position: absolute;
+    width: 400px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+}
+
+#where_text {
+    color: lightgray;
+    font-family: sans-serif;
+    margin-left: 15px;
+}
+
+#check_in_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+    left: 400px;
+}
+
+#check_in_text {
+    font-family: sans-serif;
+    color: gray;
+    margin-left: 15px;
+}
+
+#check_out_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+    left: 510px;
+}
+
+#check_out_text {
+    font-family: sans-serif;
+    color: gray;
+    margin-left: 15px;
+}
+
+#guest_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+    left: 620px;
+}
+
+#guest_text {
+    font-family: sans-serif;
+    color: gray;
+    margin-left: 15px;
+}
+
+#search_button_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    left: 730px;
+}
+
+#search_button:link {
+    position: absolute;
+    font-family: sans-serif;
+    background-color: #25898b;
+    color: white;
+    text-decoration: none;
+    padding: 12.5px 30px 15px 30px;
+    border-radius: 0px 3px 3px 0px;
+}
+
+#search_button:visited {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#search_button:hover {
+    background-color: #ff5b74;
+}
+
+#just_for_the_weekend_text {
+    color: #545454;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#discover_text {
+    font-family: sans-serif;
+    color: #545454;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+#kuta_ubud_kualalumpur_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#kuta_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('yamaha_piano.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#ubud_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('orange_drumset.jpg');
+    background-size: cover;
+    background-position: center;
+    left: 325px;
+}
+
+#kualalumpur_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('bass.jpg');
+    background-size: cover;
+    background-position: center;
+    left: 650px;
+}
+
+#all_destinations_div {
+     position: relative;
+     height: 55px;
+     font-weight: bold;
+}
+
+#all_destinations_text:link {
+    font-family: sans-serif;
+    color: #484848;
+    text-decoration: none;
+    border: 1px solid #c4c4c4;
+    padding: 10px 80px 10px 80px;
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -158.5px;
+}
+
+#all_destinations_text:visited {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#all_destinations_text:hover {
+    border: 1px solid gray;
+}
+
+
+#explore_the_world_text {
+    color: #545454;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#people_traveling_text {
+    font-family: sans-serif;
+    color: #545454;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+#newyork_william_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#newyork_div {
+    position: absolute;
+    width: 625px;
+    height: 100%;
+    background-image: url('black_guitar.png');
+    background-size: cover;
+    margin-right: 25px;
+}
+
+#newyork_link:link {
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 157.5px 233px 157.7px 233px;
+    top: 0;
+    font-size: 35px;
+}
+
+#newyork_link:visited {
+    color: white;
+}
+
+#william_div {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-image: url('black_guitar.png');
+    background-size: cover;
+    right: 0;
+}
+
+#william_home_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 190px;
+
+}
+
+#william_city_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#william_home_price_div {
+    position: relative;
+    margin-top: 40px;
+    width: 80px;
+    height: 35px;
+    background-color: rgba(94, 94, 94, 0.8);
+}
+
+#william_home_price_text {
+    font-family: sans-serif;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+}
+
+.small_dollar_sign {
+    position: absolute;
+    font-size: 15px;
+    top: 8px;
+    left: 8px;
+}
+
+#hawaii_paris_barcelona_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#hawaii_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('marshall_guitar_amplifier.jpg');
+    background-size: cover;
+    background-position: -100px;
+}
+
+#paris_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('xylophone.jpg');
+    background-size: cover;
+    background-position: center;
+    left: 325px;
+}
+
+#barcelona_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('marshall_guitar_amplifier.jpg');
+    background-size: cover;
+    background-position: center;
+    left: 650px;
+}
+
+#egypt_gaby_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#gaby_div {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-image: url('black_guitar.png');
+    background-size: cover;
+    margin-right: 25px;
+}
+
+#gaby_profile_div {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    background-image: url('https://s5.postimg.org/7euze7x87/gaby.jpg');
+    background-size: cover;
+    left: 50%;
+    margin-left: -32.5px;
+    top: 100px;
+    border: 2px solid white;
+}
+
+#gaby_home_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 190px;
+}
+
+#gaby_city_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#gaby_home_price_div {
+    position: relative;
+    margin-top: 40px;
+    width: 80px;
+    height: 35px;
+    background-color: rgba(94, 94, 94, 0.8);
+}
+
+#gaby_home_price_text {
+    font-family: sans-serif;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+}
+
+#egypt_div {
+    position: absolute;
+    width: 625px;
+    height: 100%;
+    background-image: url('https://s5.postimg.org/ionp9629j/egypt.jpg');
+    background-size: cover;
+    right: 0;
+}
+
+#egypt_link:link {
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 157.5px 233px 157.7px 233px;
+    top: 0;
+    font-size: 35px;
+}
+
+#egypt_link:visited {
+    color: white;
+}
+
+#vienna_berlin_jakarta_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#vienna_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('black_guitar.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#berlin_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('electric_guitar.jpg');
+    background-size: cover;
+    background-position: center;
+    left: 325px;
+}
+
+#jakarta_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('marshall_guitar_amplifier.jpg');
+    background-size: cover;
+    background-position: center;
+    left: 650px;
+}
+
+.three_thumnail_text {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 130px;
+}
+
+#slidy-container {
+    position: relative;
+    width: 100%;
+    height: 550phx;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#slidy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+}
+.row {
+  clear:both;
+  display: table;
+  content: "";
+}
+.col-2 {
+  width: 160px;
+  float:left;
+}
+.col-3 {
+  width: 240px;
+  float:left;
+}
+.offset-1 {
+  margin-left: 80px;
+}

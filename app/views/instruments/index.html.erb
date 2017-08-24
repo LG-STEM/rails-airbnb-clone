@@ -1,138 +1,35 @@
-<ul>
-  <% @instruments.each do |instrument| %>
-    <li><%= instrument.name %></li>
-    <%= cl_image_tag instrument.photo.path, width: 200, height: 300, crop: :fill %>
 
+<div class="container">
+  <main class="site-content">
+   <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
+
+
+ <section class="search-form">
+  <%= simple_form_for :search, url: instruments_path, method: "get", html: { class: 'form-inline' } do |f| %>
+    <%= f.input :start_date, label: false, placeholder: 'Start Date', :as => :datetime_picker %>
+    <%= f.input :end_date, label: false, placeholder: 'End Date', :as => :date_picker %>
+    <%= f.input :name, input_html: { class: 'search-input' }, label: false, placeholder: "What instrument are you looking for?" %>
+    <%= f.submit class: 'search-btn' %>
   <% end %>
-</ul>
+</section>
 
-<main class="site-content">
-     <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
-    <section class="search-form">
-      <input class="search-input" type="text" placeholder="What are you looking for?"></input>
-      <div class="checks-input">
-        <input class="check-in" type="text" placeholder="Where are you looking for?"></input>
-      </div>
-      <button class="search-btn"> Search </button>
-    </section>
-     <!--<section class="search-row">
-        <input class="search-input" type="text" placeholder="What are you looking for?"></input>
-        <div class="checks-input">
-          <input class="search-input" type="text" placeholder="Where are you looking for?"></input>
-          <button class="search-btn"> Search </button>
-     </section>-->
   <section class="gallery">
     <div class="prices">
-      <h3>Explore</h3>
-       <div class="img"><img src="images/yamaha_piano.png">
-        <div class="price-stamp">$158</div>
-        <div class="description">
-          <h4>Black Yamaha Piano</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/black_guitar.png">
-        <div class="price-stamp">$99</div>
-        <div class="description">
-          <h4>Black Guitar</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/brown_black_electric_guitar.png">
-        <div class="price-stamp">$46</div>
-        <div class="description">
-          <h4>Brown Black Electric Guitar</h4>
-        </div>
-      </div>
-       <div class="img"><img src="images/yamaha_piano.png">
-        <div class="price-stamp">$158</div>
-        <div class="description">
-          <h4>Black Yamaha Piano</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/black_guitar.png">
-        <div class="price-stamp">$99</div>
-        <div class="description">
-          <h4>Black Guitar</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/brown_black_electric_guitar.png">
-        <div class="price-stamp">$46</div>
-        <div class="description">
-          <h4>Brown Black Electric Guitar</h4>
-        </div>
-      </div>
-       <div class="img"><img src="images/yamaha_piano.png">
-        <div class="price-stamp">$158</div>
-        <div class="description">
-          <h4>Black Yamaha Piano</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/black_guitar.png">
-        <div class="price-stamp">$99</div>
-        <div class="description">
-          <h4>Black Guitar</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/brown_black_electric_guitar.png">
-        <div class="price-stamp">$46</div>
-        <div class="description">
-          <h4>Brown Black Electric Guitar</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/yamaha_piano.png">
-        <div class="price-stamp">$158</div>
-        <div class="description">
-          <h4>Black Yamaha Piano</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/black_guitar.png">
-        <div class="price-stamp">$99</div>
-        <div class="description">
-          <h4>Black Guitar</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/brown_black_electric_guitar.png">
-        <div class="price-stamp">$46</div>
-        <div class="description">
-          <h4>Brown Black Electric Guitar</h4>
-        </div>
-      </div>
-       <div class="img"><img src="images/yamaha_piano.png">
-        <div class="price-stamp">$158</div>
-        <div class="description">
-          <h4>Black Yamaha Piano</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/black_guitar.png">
-        <div class="price-stamp">$99</div>
-        <div class="description">
-          <h4>Black Guitar</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/brown_black_electric_guitar.png">
-        <div class="price-stamp">$46</div>
-        <div class="description">
-          <h4>Brown Black Electric Guitar</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/yamaha_piano.png">
-        <div class="price-stamp">$158</div>
-        <div class="description">
-          <h4>Black Yamaha Piano</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/black_guitar.png">
-        <div class="price-stamp">$99</div>
-        <div class="description">
-          <h4>Black Guitar</h4>
-        </div>
-      </div>
-      <div class="img"><img src="images/brown_black_electric_guitar.png">
-        <div class="price-stamp">$46</div>
-        <div class="description">
-          <h4>Brown Black Electric Guitar</h4>
-        </div>
-      </div>
-    </div>
-    <hr>
 
-</main>
+    <% @instruments.each do |instrument| %>
+      <%= link_to instrument_path(instrument) do %>
+        <div class="img">
+          <%= cl_image_tag instrument.photo.path, width: 200, height: 300, crop: :fill %>
+          <div class="price-stamp"><p>$ <%= instrument.price %></p></div>
+          <div class="description">
+            <h3><%= instrument.name.capitalize %></h3>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+
+      <%= @message %>
+
+
+
+
