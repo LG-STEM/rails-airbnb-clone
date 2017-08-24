@@ -1,19 +1,23 @@
 class BookingsController < ApplicationController
-  def preload
-    instrument = Instrument.find(params[:instrument_id])
-    today = Date.today
-    bookings = instrument.bookings.where("start_date >= ? OR end_date >= ?", today, today)
+  def show
+    @booking = Booking.find(params[:id])
   end
 
   def create
-    @booking = current_user.bookings.create(bookings_params)
-
-    redirect_to @bookings.room, notice: "Your bookings has been created..."
+    @booking = Booking.new(booking_params)
+    @instrument = Instrument.find(params[:instrument_id])
+    @booking.user = current_user
+    @booking.instrument = @instrument
+    if @booking.save
+      redirect_to instrument_booking_path(@instrument, @booking), notice: "Your bookings has been created..."
+    else
+      render 'instruments/show'
+    end
   end
 
   private
 
-  def bookings_params
-    params.require(:bookings).permit(:start_date, :end_date, :price, :user_id, :instrument_id)
+  def booking_params
+    params.require(:booking).permit(:start_date, :end_date)
   end
 end

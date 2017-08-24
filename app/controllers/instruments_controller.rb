@@ -12,6 +12,7 @@ class InstrumentsController < ApplicationController
   def show
     @instrument = Instrument.find(params[:id])
     @booking = Booking.new # This line is so we can generate a simple form for booking
+
   end
 
   def new
@@ -31,7 +32,7 @@ class InstrumentsController < ApplicationController
   private
 
   def instrument_params
-    params.require(:instruments).permit(:name, :price, :avaliablity, :description, :category, :photo)
+    params.require(:instrument).permit(:name, :price, :avaliablity, :description, :category, :photo)
   end
 
 end
