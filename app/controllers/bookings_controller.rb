@@ -2,7 +2,7 @@ class BookingsController < ApplicationController
   def preload
     instrument = Instrument.find(params[:instrument_id])
     today = Date.today
-    bookingss = instrument.bookings.where("start_date >= ? OR end_date >= ?", today, today)
+    bookings = instrument.bookings.where("start_date >= ? OR end_date >= ?", today, today)
   end
 
   def create
