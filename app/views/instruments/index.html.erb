@@ -1,16 +1,17 @@
 
+<div class="container">
+  <main class="site-content">
+   <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
 
-<main class="site-content">
- <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
- <section class="search-form">
-  <%= simple_form_for(:search, url: instruments_path, method: "get") do |f| %>
-  <%= f.input :name, input_html: { class: 'search-input' }, label: false, placeholder: "What instrument are you looking for?" %>
-  <%= f.submit class: 'search-btn' %>
-<% end %>
-</section>
+   <section class="search-form">
+    <%= simple_form_for(:search, url: instruments_path, method: "get") do |f| %>
+    <%= f.input :name, input_html: { class: 'search-input' }, label: false, placeholder: "What instrument are you looking for?" %>
+    <%= f.submit class: 'search-btn' %>
+  <% end %>
+  </section>
 
-<section class="gallery">
-  <div class="prices">
+  <section class="gallery">
+    <div class="prices">
 
     <% @instruments.each do |instrument| %>
       <%= link_to instrument_path(instrument) do %>
@@ -24,5 +25,5 @@
       <% end %>
     <% end %>
   </main>
-
+</div>
 
