@@ -2,11 +2,14 @@
 
 <main class="site-content">
  <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
+
  <section class="search-form">
-  <%= simple_form_for(:search, url: instruments_path, method: "get") do |f| %>
-  <%= f.input :name, input_html: { class: 'search-input' }, label: false, placeholder: "What instrument are you looking for?" %>
-  <%= f.submit class: 'search-btn' %>
-<% end %>
+  <%= simple_form_for :search, url: instruments_path, method: "get", html: { class: 'form-inline' } do |f| %>
+    <%= f.input :start_date, label: false, placeholder: 'Start Date', :as => :datetime_picker %>
+    <%= f.input :end_date, label: false, placeholder: 'End Date', :as => :date_picker %>
+    <%= f.input :name, input_html: { class: 'search-input' }, label: false, placeholder: "What instrument are you looking for?" %>
+    <%= f.submit class: 'search-btn' %>
+  <% end %>
 </section>
 
 <section class="gallery">
@@ -23,6 +26,19 @@
         </div>
       <% end %>
     <% end %>
+
+      <%= @message %>
+
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+  <div class="card-category">Popular</div>
+  <div class="card-description">
+    <h2>Le Wagon Shanghai</h2>
+    <p>Very cool city, the best</p>
+  </div>
+  <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+  <a class="card-link" href="#" ></a>
+</div>
   </main>
+
 
 
