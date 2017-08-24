@@ -1,28 +1,29 @@
 
 
 <main class="site-content">
- <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
- <section class="search-form">
-  <%= simple_form_for(:search, url: instruments_path, method: "get") do |f| %>
-  <%= f.input :name, input_html: { class: 'search-input' }, label: false, placeholder: "What instrument are you looking for?" %>
-  <%= f.submit class: 'search-btn' %>
-<% end %>
-</section>
-
-<section class="gallery">
-  <div class="prices">
-
-    <% @instruments.each do |instrument| %>
-      <%= link_to instrument_path(instrument) do %>
-        <div class="img">
-          <%= cl_image_tag instrument.photo.path, width: 200, height: 300, crop: :fill %>
-          <div class="price-stamp"><p>$ <%= instrument.price %></p></div>
-          <div class="description">
-            <h3><%= instrument.name.capitalize %></h3>
-          </div>
-        </div>
-      <% end %>
+  <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
+  <section class="search-form">
+    <%= simple_form_for(:search, url: instruments_path, method: "get") do |f| %>
+      <%= f.input :name, input_html: { class: 'search-input' }, label: false, placeholder: "What instrument are you looking for?" %>
+      <%= f.submit class: 'search-btn' %>
     <% end %>
-  </main>
+  </section>
+
+  <section class="gallery">
+    <div class="prices">
+      <% @instruments.each do |instrument| %>
+        <%= link_to instrument_path(instrument) do %>
+          <div class="img">
+            <%= cl_image_tag instrument.photo.path, width: 200, height: 300, crop: :fill %>
+            <div class="price-stamp"><p>$ <%= instrument.price %></p></div>
+            <div class="description">
+              <h3><%= instrument.name.capitalize %></h3>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </section>
+</main>
 
 
