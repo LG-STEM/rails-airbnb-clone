@@ -26,8 +26,24 @@ INSTRUMENTS = {
     ],
   drums: [
     'https://s-media-cache-ak0.pinimg.com/736x/97/79/0c/97790cf4d9bac1be384ad4e75e6ca193--gretsch-drums-drum-sets.jpg',
-    'https://de.yamaha.com/de/files/Junior_Kit_540x540_396x396_3fd7dfa87f41b96b09838060b7c9d668.jpg'
-    ]
+    'https://de.yamaha.com/de/files/Junior_Kit_540x540_396x396_3fd7dfa87f41b96b09838060b7c9d668.jpg',
+    'https://www.native-instruments.com/typo3temp/pics/img-ce-03_the_drum_kits-2de169605538cc37b6cdd14691429fd6-d.jpg'
+    ],
+  bass: [
+    'https://cdn.shopify.com/s/files/1/0775/5481/products/IMG_0296_grande.jpg?v=1495131494',
+    'https://static1.squarespace.com/static/55db79dfe4b01e5be14e4925/55db7c69e4b068214f73ebc5/567848a2a12f4431fe783aab/1450723491283/C-Ken-Smith-94-6-String-Bass-tp.jpg?format=500w',
+    'https://s-media-cache-ak0.pinimg.com/736x/36/7e/9a/367e9a70ca33f734310ff8117e0f8ed6--bass-guitars-for-sale-instruments.jpg',
+    ],
+  brass: [
+    'https://imgix.ranker.com/list_img_v2/1509/161509/original/brass-instrument-instruments-in-this-family-u1?w=817&h=427&fm=jpg&q=50&fit=crop',
+    'https://irp-cdn.multiscreensite.com/fe3fcbe5/dms3rep/multi/mobile/84653445_Trumpet-500x333.jpg',
+    'http://www.miraphone.de/files/bilder/home/teaser/xEuphonium,P20breit,P20Kopie.jpg.pagespeed.ic.fy9gmN9Gyx.jpg'
+    ],
+  strings: [
+    'http://www.abc.net.au/news/image/6926544-3x2-700x467.jpg',
+    'https://welltempered.files.wordpress.com/2013/09/string-trio-violin-viola-and-cello.jpg',
+    'https://images-na.ssl-images-amazon.com/images/G/15/img17/musical-instruments/content-grid/mi_vertical_band_tall_2._V503595518_.jpg'
+  ]
 }
 
 20.times do
