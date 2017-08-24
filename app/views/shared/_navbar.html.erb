@@ -15,6 +15,7 @@
     </div>
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
        <p>musicbiz</p>
+
   <% end %>
 </div>
   <!-- Right Navigation -->
@@ -22,6 +23,10 @@
     <% if user_signed_in? %>
       <!-- Links when logged in -->
       <%= link_to "Create Listing",class: "navbar-wagon-link" %>
+      <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Rentals", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
         <div class="dropdown">

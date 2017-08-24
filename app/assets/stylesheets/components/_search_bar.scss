@@ -1,0 +1,47 @@
+.search {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.0);
+  bottom: 0;
+  margin-top: 100px;
+}
+
+.search-row {
+    position: absolute;
+    width: 800px;
+    height: 45px;
+    background-color: white;
+    top: 50%;
+    margin-top: -80px;
+    left: 50%;
+    margin-left: -400px;
+    border-radius: 3px;
+}
+
+.form-control.search-input{
+    padding: 10px;
+    float: left;
+    width: 393px;
+    border: 1px solid #c3c3c3;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 16px;
+  }
+  .search-btn{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #FF5A5F;
+    background-color: #FF5A5F;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+  .search-btn:hover{
+    background-color: #FF7E82;
+    cursor: pointer;
+  }
+
+  .datetimepicker {
+    width: 160px;
+  }

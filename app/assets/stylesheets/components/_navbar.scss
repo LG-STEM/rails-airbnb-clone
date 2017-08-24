@@ -119,6 +119,8 @@
   100% {
     height: 100%;
   }
+=======
+  font-size: 14px;
 }
 
 /* User Avatar */
@@ -144,11 +146,12 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #616668;
+  color: #616668; 
   font-size: 15px;
   margin-right: 20px;
   font-weight: 500;
 }
+
 .navbar-wagon-link:hover {
   color: #da552f;
   text-decoration: none;
