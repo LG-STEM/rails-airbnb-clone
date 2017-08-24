@@ -1,24 +1,38 @@
 <div class="container">
-  <div class="row">
-    <div class="col=sm-4 col-sm-offset-4"></div>
-
-      <h2>Hello, please sign in</h2>
-
-      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="form-inputs">
-        <%= f.input :email, required: false, autofocus: true %>
-        <%= f.input :password, required: false %>
-        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-      </div>
-
-      <div class="form-actions">
-        <%= f.button :submit, "Log in" %>
-      </div>
-    <% end %>
-
-    <%= render "devise/shared/links" %>
-  </div>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-4">
+            <div class="account-box">
+                <div class="logo">
+                    <%= link_to root_path, class: "navbar-wagon-brand" do %>
+                     <p>musicbiz</p>
+                  <% end %>
+                </div>
+                <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                <%= f.input :email, required: false, autofocus: true, placeholder: "Email" %>
+                <%= f.input :password, required: false %>
+                <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+                <%= f.button :submit, "Log in" %>
+                <% end %>
+                <a class="forgotLnk" href="http://www.jquery2dotnet.com">I can't access my account</a>
+                <div class="or-box">
+                    <span class="or">OR</span>
+                    <div class="row">
+                        <div class="col-md-6 row-block">
+                            <a href="http://www.jquery2dotnet.com" class="btn btn-facebook btn-block">Facebook</a>
+                        </div>
+                        <div class="col-md-6 row-block">
+                            <a href="http://www.jquery2dotnet.com" class="btn btn-google btn-block">Google</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="or-box row-block">
+                    <div class="row">
+                        <div class="col-md-12 row-block">
+                            <a href="http://www.jquery2dotnet.com" class="btn btn-primary btn-block">Create New Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-
