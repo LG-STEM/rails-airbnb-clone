@@ -1,7 +1,8 @@
 
+<div class="container">
+  <main class="site-content">
+   <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
 
-<main class="site-content">
- <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
 
  <section class="search-form">
   <%= simple_form_for :search, url: instruments_path, method: "get", html: { class: 'form-inline' } do |f| %>
@@ -12,8 +13,8 @@
   <% end %>
 </section>
 
-<section class="gallery">
-  <div class="prices">
+  <section class="gallery">
+    <div class="prices">
 
     <% @instruments.each do |instrument| %>
       <%= link_to instrument_path(instrument) do %>
@@ -39,6 +40,6 @@
   <a class="card-link" href="#" ></a>
 </div>
   </main>
-
+</div>
 
 
