@@ -13,25 +13,25 @@
   height: 100vh;
   opacity: 0.9;
   text-align: center;
-
-  //background: $gray;
-
-  margin: 0 auto;
-  top: -80px;
-  .video{
-    position: absolute;
-    left: 0 ;
-    right: 50px ;
-    top: -30%;
-    width: 100%;
-    max-width: 1500px;
-    height: 150%;
-    margin: auto;
-  }
 }
 
+.btn-home {
+  border: 2px solid white;
+  padding: 1.2rem 2.4rem;
+  font-size: 2rem;
+  display: inline-block;
+  color: white;
+  flex: 0;
+  margin-top: 2.5rem;
+  margin-bottom: 4.8rem;
+  align-self: center;
+  text-align: center;
+}
 
-/*-----*/
+.btn-home:hover {
+  color: #FF5A5F;
+  text-decoration: none;
+}
 
 #where_div {
     position: absolute;
@@ -88,6 +88,8 @@
     margin-left: 15px;
 }
 
+/*--*/
+
 #search_button_div {
     position: absolute;
     width: 110px;
@@ -115,210 +117,6 @@
     background-color: #ff5b74;
 }
 
-#just_for_the_weekend_text {
-    color: #545454;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
-
-#discover_text {
-    font-family: sans-serif;
-    color: #545454;
-    text-align: center;
-    margin-top: -20px;
-    margin-bottom: 50px;
-}
-
-#kuta_ubud_kualalumpur_div {
-    position: relative;
-    width: 950px;
-    height: 350px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 25px;
-}
-
-#kuta_div {
-    position: absolute;
-    width: 300px;
-    height: 350px;
-    margin-right: 25px;
-    background-image: url('yamaha_piano.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#ubud_div {
-    position: absolute;
-    width: 300px;
-    height: 350px;
-    margin-right: 25px;
-    background-image: url('orange_drumset.jpg');
-    background-size: cover;
-    background-position: center;
-    left: 325px;
-}
-
-#kualalumpur_div {
-    position: absolute;
-    width: 300px;
-    height: 350px;
-    margin-right: 25px;
-    background-image: url('bass.jpg');
-    background-size: cover;
-    background-position: center;
-    left: 650px;
-}
-
-#all_destinations_div {
-     position: relative;
-     height: 55px;
-     font-weight: bold;
-}
-
-#all_destinations_text:link {
-    font-family: sans-serif;
-    color: #484848;
-    text-decoration: none;
-    border: 1px solid #c4c4c4;
-    padding: 10px 80px 10px 80px;
-    border-radius: 2px;
-    background-color: white;
-    position: absolute;
-    left: 50%;
-    margin-left: -158.5px;
-}
-
-#all_destinations_text:visited {
-    font-family: sans-serif;
-    color: white;
-    text-decoration: none;
-}
-
-#all_destinations_text:hover {
-    border: 1px solid gray;
-}
-
-
-#explore_the_world_text {
-    color: #545454;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#people_traveling_text {
-    font-family: sans-serif;
-    color: #545454;
-    text-align: center;
-    margin-top: -10px;
-    margin-bottom: 50px;
-    font-size: 15px;
-}
-
-#newyork_william_div {
-    position: relative;
-    width: 950px;
-    height: 350px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 25px;
-}
-
-#newyork_div {
-    position: absolute;
-    width: 625px;
-    height: 100%;
-    background-image: url('black_guitar.png');
-    background-size: cover;
-    margin-right: 25px;
-}
-
-#newyork_link:link {
-    position: absolute;
-    font-family: sans-serif;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 157.5px 233px 157.7px 233px;
-    top: 0;
-    font-size: 35px;
-}
-
-#newyork_link:visited {
-    color: white;
-}
-
-#william_div {
-    position: absolute;
-    width: 300px;
-    height: 100%;
-    background-image: url('black_guitar.png');
-    background-size: cover;
-    right: 0;
-}
-
-#william_home_text {
-    font-family: sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 23px;
-    margin-top: 190px;
-
-}
-
-#william_city_text {
-    font-family: sans-serif;
-    color: white;
-    text-align: center;
-    margin-top: -20px;
-}
-
-#william_home_price_div {
-    position: relative;
-    margin-top: 40px;
-    width: 80px;
-    height: 35px;
-    background-color: rgba(94, 94, 94, 0.8);
-}
-
-#william_home_price_text {
-    font-family: sans-serif;
-    color: white;
-    font-size: 27px;
-    text-align: center;
-}
-
-.small_dollar_sign {
-    position: absolute;
-    font-size: 15px;
-    top: 8px;
-    left: 8px;
-}
-
-#hawaii_paris_barcelona_div {
-    position: relative;
-    width: 950px;
-    height: 350px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 25px;
-}
-
-#hawaii_div {
-    position: absolute;
-    width: 300px;
-    height: 350px;
-    margin-right: 25px;
-    background-image: url('marshall_guitar_amplifier.jpg');
-    background-size: cover;
-    background-position: -100px;
-}
 
 .jumbotron h3 {
   margin: 0 auto;
@@ -330,8 +128,6 @@
   text-align: center;
 }
 
-
-
 /* main section*/
 
 #featured_categories {
@@ -341,7 +137,7 @@
   color: #545454;
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .card {
