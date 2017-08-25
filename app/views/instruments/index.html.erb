@@ -16,19 +16,25 @@
   <section class="gallery">
     <div class="prices">
 
-    <% @instruments.each do |instrument| %>
-      <%= link_to instrument_path(instrument) do %>
-        <div class="img">
-          <%= cl_image_tag instrument.photo.path, width: 200, height: 300, crop: :fill %>
-          <div class="price-stamp"><p>$ <%= instrument.price %></p></div>
-          <div class="description">
-            <h3><%= instrument.name.capitalize %></h3>
+  <section class="gallery">
+    <div class="prices">
+      <% @instruments.each do |instrument| %>
+        <%= link_to instrument_path(instrument) do %>
+          <div class="img">
+            <%= cl_image_tag instrument.photo.path, width: 200, height: 300, crop: :fill %>
+            <div class="price-stamp"><p>$ <%= instrument.price %></p></div>
+            <div class="description">
+              <h3><%= instrument.name.capitalize %></h3>
+            </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
+    <%= @message %>
+  </section>
+</main>
 
-      <%= @message %>
+      
 
 
 
