@@ -1,23 +1,19 @@
 
 <div class="container">
-  <main class="site-content">
-   <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
+    <br><br><br><br><br>
+    <h2 class="title"><span style="color:#25898b;">Discover your sound.</span></br>Rent musical instruments, equipment, and gears.</h2>
 
 
- <section class="search-form">
-  <%= simple_form_for :search, url: instruments_path, method: "get", html: { class: 'form-inline' } do |f| %>
-    <%= f.input :start_date, label: false, placeholder: 'Start Date', :as => :datetime_picker %>
-    <%= f.input :end_date, label: false, placeholder: 'End Date', :as => :date_picker %>
-    <%= f.input :name, input_html: { class: 'search-input' }, label: false, placeholder: "What instrument are you looking for?" %>
-    <%= f.submit class: 'search-btn' %>
-  <% end %>
-</section>
+    <section class="search-form">
+      <%= simple_form_for :search, url: instruments_path, method: "get", html: { class: 'form-inline' } do |f| %>
+        <%= f.input :start_date, label: false, placeholder: 'Start Date', :as => :datetime_picker %>
+        <%= f.input :end_date, label: false, placeholder: 'End Date', :as => :date_picker %>
+        <%= f.input :name, input_html: { class: 'search-input' }, label: false, placeholder: "What instrument are you looking for?" %>
+        <%= f.submit class: 'search-btn' %>
+      <% end %>
+    </section>
 
-  <section class="gallery">
-    <div class="prices">
-
-  <section class="gallery">
-    <div class="prices">
+    <section class="gallery">
       <% @instruments.each do |instrument| %>
         <%= link_to instrument_path(instrument) do %>
           <div class="img">
@@ -29,12 +25,18 @@
           </div>
         <% end %>
       <% end %>
-    </div>
-    <%= @message %>
-  </section>
-</main>
 
-      
+      <% if @message %>
+        <br>
+        <br>
+        <br>
+        <p> <%= @message %> </p>
+      <% end %>
+
+    </section>
+</div>
+
+
 
 
 
