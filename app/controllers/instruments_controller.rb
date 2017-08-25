@@ -1,10 +1,19 @@
 class InstrumentsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   def index
-    if params[:search].nil? || params[:search][:name] == ""
-      @instruments = Instrument.all
+    @instruments = Instrument.all
+
+    if params[:search].nil?
+
     else
-      @instruments = Instrument.where(name: params[:search][:name])
+      unless params[:search][:name] == ""
+        @instruments = Instrument.where(name: params[:search][:name])
+      end
+
+      unless params[:search][:start_date] == "" || params[:search][:end_date] == ""
+        @instruments = @instruments.includes(:bookings).where("(bookings.start_date, bookings.end_date) OVERLAPS (?, ?)", params[:search][:start_date].to_date, params[:search][:end_date].to_date).references(:bookings)
+      end
+
       @message = 'no results' if @instruments.empty?
     end
   end
