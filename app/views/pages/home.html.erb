@@ -3,6 +3,7 @@
       <div class="container">
           <div class="row">
              <h3>Rent instruments, equipment, and space on MusicBiz.</h3>
+              <%= link_to 'Learn more', instruments_path, class: 'btn-home' %>
           </div>
       </div>
     </div>
@@ -19,7 +20,8 @@
               <div class="card-description">
                 <h2>Guitar</h2>
               </div>
-              <a class="card-link" href="#" ></a>
+              <%= link_to instruments_path(search: { name: 'guitar' }), class: 'card-link' do %>
+              <% end %>
             </div>
          </div>
           <div class="col-xs-12 col-sm-4">
@@ -27,7 +29,8 @@
               <div class="card-description">
                 <h2>Piano</h2>
               </div>
-              <a class="card-link" href="#" ></a>
+
+              <%= link_to instruments_path(search: { name: 'piano' }), class: 'card-link' do %><% end %>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4">
@@ -35,7 +38,7 @@
               <div class="card-description">
                 <h2>Drums</h2>
               </div>
-              <a class="card-link" href="#" ></a>
+              <%= link_to instruments_path(search: { name: 'drums' }), class: 'card-link' do %><% end %>
             </div>
           </div>
           <br>
@@ -44,7 +47,7 @@
               <div class="card-description">
                 <h2>Bass</h2>
               </div>
-              <a class="card-link" href="#" ></a>
+              <%= link_to instruments_path(search: { name: 'bass' }), class: 'card-link' do %><% end %>
             </div>
          </div>
           <div class="col-xs-12 col-sm-4">
@@ -52,7 +55,7 @@
               <div class="card-description">
                 <h2>Brass</h2>
               </div>
-              <a class="card-link" href="#" ></a>
+              <%= link_to instruments_path(search: { name: 'brass' }), class: 'card-link' do %><% end %>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4">
@@ -60,10 +63,11 @@
               <div class="card-description">
                 <h2>String</h2>
               </div>
-              <a class="card-link" href="#" ></a>
+              <%= link_to instruments_path(search: { name: 'string' }), class: 'card-link' do %><% end %>
             </div>
           </div>
       </div>
+    </div>
 
 
 
