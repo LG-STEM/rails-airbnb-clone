@@ -1,16 +1,12 @@
 <div class="container">
-  <div class="row col-lg-12 text-center">
-    <div class="card">
-      <img class="card-img-top img-fluid" alt="Card image cap"<%= cl_image_tag @instrument.photo.path, width: 900, height: 400, crop: :fill %>
-        <div class="card-body">
-          <h3 class="card-title"><%= @instrument.name %></h3>
-          <h4>Price: $ <%= @instrument.price %></h4>
-          <p class="card-text"><%= @instrument.description%></p>
-        <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-        4.0 stars
-        </div>
+  <br><br><br><br><br>
+
+  <div class="card card-show-page" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path @instrument.photo.path %>);">
+    <div class="card-category"><%= @instrument.name %></div>
+    <div class="card-description">
+      <p> <%= "$ #{@instrument.price}" %> </p>
     </div>
-</div>
+  </div>
 </div>
 
 <br>
