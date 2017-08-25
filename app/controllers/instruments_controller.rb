@@ -5,12 +5,14 @@ class InstrumentsController < ApplicationController
       @instruments = Instrument.all
     else
       @instruments = Instrument.where(name: params[:search][:name])
+      @message = 'no results' if @instruments.empty?
     end
   end
 
   def show
     @instrument = Instrument.find(params[:id])
     @booking = Booking.new # This line is so we can generate a simple form for booking
+
   end
 
   def new
@@ -30,7 +32,7 @@ class InstrumentsController < ApplicationController
   private
 
   def instrument_params
-    params.require(:instruments).permit(:name, :price, :avaliablity, :description, :category, :photo)
+    params.require(:instrument).permit(:name, :price, :avaliablity, :description, :category, :photo)
   end
 
 end

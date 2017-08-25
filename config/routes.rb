@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   root to: 'pages#home'
   resources :instruments, only: [:index, :new, :create, :show] do
-    resources :bookings, only: [:create]
+    resources :bookings, only: [:create, :show]
   end
   mount Attachinary::Engine => "/attachinary"
 end

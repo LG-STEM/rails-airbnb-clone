@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.3.4'
 
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+
 gem 'faker'
 gem 'cloudinary', '1.1.7'
 gem 'attachinary', github: 'assembler/attachinary'
