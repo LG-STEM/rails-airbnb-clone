@@ -5,7 +5,7 @@ class InstrumentsController < ApplicationController
       @instruments = Instrument.all
     else
       @instruments = Instrument.where(name: params[:search][:name])
-      @message = 'no results' if @instruments.empty?
+      @message = 'We do not have that intrument.' if @instruments.empty?
     end
   end
 
